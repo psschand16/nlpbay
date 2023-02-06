@@ -1,0 +1,107 @@
+#create the bucket 
+
+gsutil mb -p my-project-67827-static -b on gs://nlpbay.uk
+
+gsutil mb -p my-project-67827-static -b on gs://www.nlpbay.uk
+
+#set website config 
+
+gsutil web set -m index.html -e 404.html gs://nlpbay.uk
+
+gsutil web set -m index.html -e 404.html gs://www.nlpbay.uk
+
+#add user permissions 
+
+gsutil iam ch allUsers:legacyObjectReader gs://nlpbay.uk
+
+gsutil iam ch allUsers:legacyObjectReader gs://www.nlpbay.uk
+
+#copy the website files! 
+
+gsutil -m rsync -d -r D:\td\pro\nlpbay gs://nlpbay.uk
+
+gsutil -m rsync -d -r D:\td\pro\nlpbay gs://www.nlpbay.uk
+
+
+
+===========
+============
+ emailjs
+      .sendForm(
+        'service_yla8ag5', 'template_ey3z10a', e.target, 'user_Y3HOL08Beh8wjxT8jtgai'
+      )
+
+=======================
+
+gcloud config configurations create [NAME]
+
+gcloud config configurations list
+
+gcloud config configurations activate [name]
+
+gcloud init 	Authorizes access and performs other common gcloud CLI setup steps.
+gcloud auth login 	Authorizes access only.
+[or]
+gcloud auth login --no-launch-browser
+
+
+gcloud auth list
+
+gcloud config configurations list
+
+gcloud config configurations describe [NAME]
+
+============
+To create and download a JSON-formatted key file:
+
+    Click the action menu more button for the service account and then select Manage keys.
+    Click the Add key drop-down menu.
+    Click Create new key.
+    Select a key format and then click Create.
+
+If required, move the key file to a location on the same system where you are authorizing Google Cloud CLI tools.
+
+Alternatively, instead of Steps 1-4, you could procure a key for an an existing service account using gcloud iam service-accounts keys create.
+
+To activate your service account, run gcloud auth activate-service-account:
+
+gcloud auth activate-service-account [ACCOUNT]
+
+ --key-file=[KEY_FILE]
+
+
+Delete the key file from the system. Note that the Google Cloud CLI stores keys and the Google Cloud CLI copy of the key remains.
+===========================================================
+
+
+
+Your Inbox is ready!
+You have successfully finished creating a website channel. Copy the code shown below and paste it on your website. Next time a customer use the live chat, the conversation will automatically appear on your inbox.
+
+Copy
+
+    <script>
+      (function(d,t) {
+        var BASE_URL="https://shatkon.tk";
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=BASE_URL+"/packs/js/sdk.js";
+        g.defer = true;
+        g.async = true;
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+          window.chatwootSDK.run({
+            websiteToken: 'GEigx43vZS4mKmDEEAJTNMs8',
+            baseUrl: BASE_URL
+          })
+        }
+      })(document,"script");
+    </script>
+---------------------------
+
+CNAME
+nlpbay.com
+c.storage.googleapis.com
+Proxied
+Auto
+Edit 
+When toggled open, an additional table row will be added below this row to enable editing DNS records.

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Interact</title>
+<title>Nlpbay</title>
 <meta name="description" content="">
 <meta name="author" content="">
 
@@ -33,9 +33,67 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script type="text/javascript">
 (function() {
-emailjs.init("user_YtjrZs0GRy8LhrDYYrmi7");
+emailjs.init("user_Y3HOL08Beh8wjxT8jtgai");
+              
 })();
+
 </script>
+
+
+<script>
+  (function(d,t) {
+    var BASE_URL="http://127.0.0.1:3000";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
+    g.defer = true;
+    g.async = true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({
+        websiteToken: 'cscafopY2UvxujwhHZzEsVsJ',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");
+</script>
+
+<!-- <script>
+  (function(d,t) {
+    var BASE_URL="http://127.0.0.1:3000";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
+    g.defer = true;
+    g.async = true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({
+        websiteToken: 'TBMpitbyu1xvCMu6Ugb6j83M',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");
+</script> -->
+
+
+
+<!-- <script>
+  (function(d,t) {
+    var BASE_URL="https://chatpubb.herokuapp.com";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
+    g.defer = true;
+    g.async = true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({
+        websiteToken: '9c8JGjeMuWk5URKBKTC3wse9',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");
+</script> -->
+
+
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -67,20 +125,22 @@ emailjs.init("user_YtjrZs0GRy8LhrDYYrmi7");
   </div>
 </nav>
 <!-- Header -->
+<div id="home" class="section-padding"></div>
 <header id="header">
   <div class="intro">
     <div class="overlay">
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 intro-text">
-            <!-- <h1>We Are Interact<span></span></h1> -->
+            <!-- <h1>We Are Nlpbay<span></span></h1> -->
             <p>Enterprise AI : Data Analytics, Data Science and Machine Learning technologies and processes that enable enterprises to put AI to work to transform their businesses.!</p>
-            <a href="#features" class="btn btn-custom btn-lg page-scroll">Learn More</a> </div>
+            <a href="#contact" class="btn btn-custom btn-lg page-scroll">Learn More</a> </div>
         </div>
       </div>
     </div>
   </div>
 </header>
+</div>
 
 
 
@@ -193,7 +253,9 @@ emailjs.init("user_YtjrZs0GRy8LhrDYYrmi7");
     <div class="row">
       <div class="col-md-4">
         <div class="testimonial">
+          <!--
           <div class="testimonial-image"> <img src="img/profile.jfif" alt=""> </div>
+          -->
           <div class="testimonial-content">
             <p>"We are fully satisfied with the solution and the assistance of Nlpbay’s team. The project continues on the support level, and we are glad to continue our cooperation with nlpbay."</p>
             <div class="testimonial-meta"> -  Ivan Kayima founder of Spiela </div>
@@ -202,7 +264,9 @@ emailjs.init("user_YtjrZs0GRy8LhrDYYrmi7");
       </div>
       <div class="col-md-4">
         <div class="testimonial">
+          <!--
           <div class="testimonial-image"> <img src="img/profile.jfif" alt=""> </div>
+          -->
           <div class="testimonial-content">
             <p>"We are satisfied with our cooperation with Nlpbay and their skilled development team, which smoothly fit into our project.  We won’t hesitate to recommend Nlpbay as a reliable development partner	."</p>
             <div class="testimonial-meta"> - Dr manoj kumar phd tidyquant </div>
@@ -211,7 +275,9 @@ emailjs.init("user_YtjrZs0GRy8LhrDYYrmi7");
       </div>
       <div class="col-md-4">
         <div class="testimonial">
+          <!--
           <div class="testimonial-image"> <img src="img/profile.jfif" alt=""> </div>
+        -->
           <div class="testimonial-content">
             <p>"By working with Nlpbay, we’ve been able to achieve exactly what we set out to accomplish with this strategy, and we recommend them as a trustworthy partner with skilled technical specialists on board."</p>
             <div class="testimonial-meta"> - Hari, <a href="https://clarionlogic.co.uk/">https://clarionlogic.co.uk/</a>  </div>
@@ -259,7 +325,7 @@ emailjs.init("user_YtjrZs0GRy8LhrDYYrmi7");
             <p class="help-block text-danger"></p>
           </div>
           <div id="success"></div>
-          <button  class="btn btn-custom btn-lg">Send Message</button>
+          <button id="sendBtn" class="btn btn-custom btn-lg" >Send Message</button>
         </form>
         <h1 id="mail-result"></h1>
       </div>
@@ -281,9 +347,9 @@ emailjs.init("user_YtjrZs0GRy8LhrDYYrmi7");
         <div class="contact-item">
           <h3>Contact Info</h3>
           <br>
-          <p><span><i class="fa fa-map-marker"></i> &nbsp; Address:</span>7 haskins Parkway,
+          <p><span><i class="fa fa-map-marker"></i> &nbsp; Address:</span>Flat 1, 111 oxford  road
             <br>
-            Newbury.England RG141DF</p>
+            Reading.England RG17UH</p>
         </div>
         <div class="contact-item">
           <p><span><i class="fas fa-envelope"></i>&nbsp; Email</span> info@nlpbay.com</p>
@@ -319,5 +385,38 @@ emailjs.init("user_YtjrZs0GRy8LhrDYYrmi7");
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
 <script type="text/javascript" src="js/contact_me.js"></script> 
 <script type="text/javascript" src="js/main.js"></script>
+<!-- <script>
+  (function(d,t) {
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src="https://chatmink.herokuapp.com/embed.js"
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      new window.ChaskiqMessengerEncrypted({
+        domain: 'https://chatmink.herokuapp.com',
+        ws:  'wss://chatmink.herokuapp.com/cable',
+        app_id: "WZcyiaf71Q2KbkKvfpbzWfth",
+        data: "YOUR_ENCRYPTED_JWE_DATA",
+        lang: "USER_LANG_OR_DEFAULTS_TO_BROWSER_LANG" 
+      })
+    }
+  })(document,"script");
+</script> -->
+
 </body>
+<!-- <script>
+  (function(d,t) {
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src="https://chatmink.herokuapp.com/embed.js"
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      new window.ChaskiqMessengerEncrypted({
+        domain: 'https://chatmink.herokuapp.com',
+        ws:  'wss://chatmink.herokuapp.com/cable',
+        app_id: "86z64CMNcagDpfS6qdkSWT1Q",
+        data: "YOUR_ENCRYPTED_JWE_DATA",
+        lang: "USER_LANG_OR_DEFAULTS_TO_BROWSER_LANG" 
+      })
+    }
+  })(document,"script");
+</script> -->
 </html>

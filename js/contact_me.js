@@ -10,8 +10,10 @@
             message:document.getElementById("message").value
         };
     
-        emailjs.send("service_pdhk5x6","template_fryimma",tempParams).then(
+        emailjs.send("service_yla8ag5","template_ey3z10a",tempParams,"user_Y3HOL08Beh8wjxT8jtgai").then(
             (res)=>{
+
+                document.getElementById("sendBtn").disabled = true;
                 console.log("success",res.status)
                 document.querySelector("#mail-result").innerHTML="Thanks for submitting form, We will Contact you in shortly."
             }
